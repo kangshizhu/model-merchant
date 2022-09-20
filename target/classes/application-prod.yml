@@ -1,0 +1,71 @@
+aliyun:
+  oss:
+    file:
+      endPoint: "http://oss-cn-hangzhou.aliyuncs.com"
+      keyid: "LTAI5t7V7FUA3zo4MswXzEZB"
+      keyecrets: "7JYyFcduasWR5xfHj08xl5WWGvV3Lz"
+      #bucket可以在控制台创建，也可以使用java代码创建
+      bucketname: "xzcm9999"
+
+server:
+  port: 8182
+  servlet:
+    context-path: /modelPhone
+
+
+
+jeecg:
+    # 本地：local\Minio：minio\阿里云：alioss
+    uploadType: local
+    path:
+      #文件上传根目录 设置
+      upload: D://opt//upFiles
+      #webapp文件路径annountCement/list
+      webapp: D://opt//webapp
+    shiro:
+      excludeUrls: /cloud/manage/select,
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.108.180.229:3306/mytest?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root1234
+
+
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    auto-mapping-behavior: full
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:modules/xml/*.xml
+  global-config:
+    # 逻辑删除配置
+    db-config:
+      # 删除前
+      logic-not-delete-value: 1
+      # 删除后
+      logic-delete-value: 0
+
+
+
+
+
+spring.redis:
+  database: 0
+  host: 47.108.180.229
+  lettuce:
+    pool:
+      max-active: 8   #最大连接数据库连接数,设 0 为没有限制
+      max-idle: 8     #最大等待连接中的数量,设 0 为没有限制
+      max-wait: -1ms  #最大建立连接等待时间。如果超过此时间将接到异常。设为-1表示无限制。
+      min-idle: 0     #最小等待连接中的数量,设 0 为没有限制
+    shutdown-timeout: 100ms
+  password: ''
+  port: 6379
+
+
+
+
+
