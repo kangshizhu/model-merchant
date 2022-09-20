@@ -8,9 +8,9 @@ aliyun:
       bucketname: "xzcm9999"
 
 server:
-  port: 8182
+  port: 8282
   servlet:
-    context-path: /modelPhone
+    context-path: /modelMerchant
 
 
 
@@ -53,7 +53,7 @@ mybatis-plus:
 
 
 spring.redis:
-  database: 0
+  database: 2
   host: 47.108.180.229
   lettuce:
     pool:

@@ -1,7 +1,7 @@
 server:
-  port: 8182
+  port: 8282
   servlet:
-    context-path: /modelAdmin
+    context-path: /modelMerchant
 
 jeecg:
   # 本地：local\Minio：minio\阿里云：alioss
@@ -43,7 +43,7 @@ mybatis-plus:
 
 
 spring.redis:
-  database: 0
+  database: 2
   host: 47.108.180.229
   lettuce:
     pool:
