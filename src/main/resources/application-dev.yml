@@ -1,5 +1,5 @@
 server:
-  port: 8182
+  port: 8282
   servlet:
     context-path: /modelAdmin
 

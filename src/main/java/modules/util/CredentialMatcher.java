@@ -12,6 +12,7 @@ import org.apache.shiro.authc.credential.SimpleCredentialsMatcher;
  * @date 2019/2/17
  */
 public class CredentialMatcher extends SimpleCredentialsMatcher {
+
     @Override
     public boolean doCredentialsMatch(AuthenticationToken token, AuthenticationInfo info) {
         UsernamePasswordToken usernamePasswordToken = (UsernamePasswordToken) token;

@@ -21,7 +21,6 @@ import java.net.UnknownHostException;
 @MapperScan("modules.mapper")
 public class Application {
     public static void main(String[] args) throws UnknownHostException {
-
         ConfigurableApplicationContext application =SpringApplication.run(Application.class, args);
         Environment env = application.getEnvironment();
         String ip = InetAddress.getLocalHost().getHostAddress();

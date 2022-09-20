@@ -8,7 +8,7 @@ aliyun:
       bucketname: "xzcm9999"
 
 server:
-  port: 8182
+  port: 8282
   servlet:
     context-path: /modelPhone
 
