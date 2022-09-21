@@ -1,7 +1,7 @@
 aliyun:
   oss:
     file:
-      endPoint: "http://oss-cn-hangzhou.aliyuncs.com"
+      endPoint: "oss-cn-hangzhou.aliyuncs.com"
       keyid: "LTAI5t7V7FUA3zo4MswXzEZB"
       keyecrets: "7JYyFcduasWR5xfHj08xl5WWGvV3Lz"
       #bucket可以在控制台创建，也可以使用java代码创建
